@@ -19,7 +19,7 @@ The comments page for joints
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments" class="h2"><?php comments_number(__('<span>No</span> Responses', 'jointstheme'), __('<span>One</span> Response', 'jointstheme'), _n('<span>%</span> Response', '<span>%</span> Responses', get_comments_number(),'jointstheme') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h2"><?php comments_number(__('<span>Ingen</span> svar', 'jointstheme'), __('<span>En</span> kommentar', 'jointstheme'), _n('<span>%</span> kommentar', '<span>%</span> kommentarer', get_comments_number(),'jointstheme') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	
 	<ol class="commentlist">
@@ -46,7 +46,7 @@ The comments page for joints
 
 <section id="respond" class="respond-form">
 
-	<h3 id="comment-form-title" class="h2"><?php comment_form_title( __('Leave a Reply', 'jointstheme'), __('Leave a Reply to %s', 'jointstheme' )); ?></h3>
+	<h3 id="comment-form-title" class="h2"><?php comment_form_title( __('Kommentarer', 'jointstheme'), __('Skriv et svar til %s', 'jointstheme' )); ?></h3>
 
 	<div id="cancel-comment-reply">
 		<p class="small"><?php cancel_comment_reply_link(); ?></p>
@@ -54,7 +54,7 @@ The comments page for joints
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
   	<div class="alert help">
-  		<p><?php printf( __('You must be %1$slogged in%2$s to post a comment.', 'jointstheme'), '<a href="<?php echo wp_login_url( get_permalink() ); ?>">', '</a>' ); ?></p>
+  		<p><?php printf( __('Du skal være %1$slogget ind%2$s for at kommentere.', 'jointstheme'), '<a href="<?php echo wp_login_url( get_permalink() ); ?>">', '</a>' ); ?></p>
   	</div>
 	<?php else : ?>
 
@@ -62,21 +62,21 @@ The comments page for joints
 
 	<?php if ( is_user_logged_in() ) : ?>
 
-	<p class="comments-logged-in-as"><?php _e("Logged in as", "jointstheme"); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e("Log out of this account", "jointstheme"); ?>"><?php _e("Log out", "jointstheme"); ?> <?php _e("&raquo;", "jointstheme"); ?></a></p>
+	<p class="comments-logged-in-as"><?php _e("Logget ind som", "jointstheme"); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e("Log ud af denne konto", "jointstheme"); ?>"><?php _e("Log ud", "jointstheme"); ?> <?php _e("&raquo;", "jointstheme"); ?></a></p>
 
 	<?php else : ?>
 	
 	<ul id="comment-form-elements" class="clearfix">
 		
 		<li>
-		  <label for="author"><?php _e("Name", "jointstheme"); ?> <?php if ($req) _e("(required)"); ?></label>
+		  <label for="author"><?php _e("Navn", "jointstheme"); ?> <?php if ($req) _e("(Påkrævet)"); ?></label>
 		  <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e('Your Name*', 'jointstheme'); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 		</li>
 		
 		<li>
-		  <label for="email"><?php _e("Mail", "jointstheme"); ?> <?php if ($req) _e("(required)"); ?></label>
+		  <label for="email"><?php _e("Email", "jointstheme"); ?> <?php if ($req) _e("(Påkrævet)"); ?></label>
 		  <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e('Your E-Mail*', 'jointstheme'); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-		  <small><?php _e("(will not be published)", "jointstheme"); ?></small>
+		  <small><?php _e("(Bliver ikke vist)", "jointstheme"); ?></small>
 		</li>
 		
 		<li>
@@ -88,10 +88,10 @@ The comments page for joints
 
 	<?php endif; ?>
 	
-	<p><textarea name="comment" id="comment" placeholder="<?php _e('Your Comment here...', 'jointstheme'); ?>" tabindex="4"></textarea></p>
+	<p><textarea name="comment" id="comment" placeholder="<?php _e('Din kommentar...', 'jointstheme'); ?>" tabindex="4"></textarea></p>
 	
 	<p>
-	  <input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit', 'jointstheme'); ?>" />
+	  <input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Send', 'jointstheme'); ?>" />
 	  <?php comment_id_fields(); ?>
 	</p>
 	

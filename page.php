@@ -4,7 +4,7 @@
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-8 medium-8 columns" role="main">
+				    <div id="main" class="large-8 medium-8 small-centered large-offset-2 columns" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -18,9 +18,11 @@
 			
     				</div> <!-- end #main -->
     
-				    <?php get_sidebar(); ?>
+				   
 				    
 				</div> <!-- end #inner-content -->
+
+				<?php comments_template(); ?>	
     
 			</div> <!-- end #content -->
 

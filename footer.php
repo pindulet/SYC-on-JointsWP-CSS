@@ -4,12 +4,22 @@
 						
 							<div class="small-12 small-centered columns" id="footer">
 										<div id="menu_burger">
-												<a id="nav-toggle" href="#"><span></span></a>
+												<div id="nav-toggle"><span></span></div>
 											<!--
 											<img src="<?php bloginfo('template_directory'); ?>/images/menu_burger.png" >
 											-->
+
 										</div>
-								
+											
+											<script type=text/javascript>
+												jQuery(document).ready(function($) {
+													$("#menu_burger").click(function(){
+														$("#footer_menu_text").toggle();
+													});
+												});
+											</script>
+											
+											<div id="footer_menu_text">MENU</div>
 		    							<ul id="footer-menu_ul">
 											<li><a href="<?php $url=get_site_url(); ?>/velkommen-til-syc">Velkommen</a></li>
 											<li><a href="<?php echo $url; ?>/sadan-bruger-du-share-your-closet">Sådan bruger du SYC</a></li>

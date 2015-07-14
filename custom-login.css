@@ -1,0 +1,85 @@
+﻿/* Custom WordPress Login Page Style */
+/* By WPCookies.com */
+ 
+/* Page Background */
+body.login, html {
+    background-image:url(images/bck_gradient.png);
+	background-color:#d4d4d4;
+	background-attachment:fixed;
+    margin: auto;
+    
+	color:#222;
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+
+}
+/* WordPress Logo Replacement (Don't forget to change width and height */
+#login h1 a {
+    background:url(images/logo.png) 0 0 no-repeat;
+	width:940px;
+    height:70px;
+	
+	z-index:10;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+	padding-top: 10px;
+	
+}
+#login{
+	padding-top:20px;	
+}
+#login label{
+	color: #222;
+}
+/* Login Button */
+#wp-submit {
+    background: #e4266f;
+    border: #f24643;
+	padding:2px 12px 4px;
+	border-radius: 0px; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px;
+	text-transform: uppercase;
+}
+#backtoblog {
+	display:none;
+}
+
+/* Lost Password Link */
+.login #nav a, .login #nav a:hover {
+    color: #443030!important;;
+}
+/* Back to Blog Link */
+.login #backtoblog a, .login #backtoblog a:hover {
+    color: #bc3d1d!important;;
+}
+
+.login form {
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+.login .message{
+	background-color:#e4266f;
+	border-color:#fff;
+	
+	color:#fff;
+	text-align:center;
+}
+
+#registerform{
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+
+}
+
+.widefat, div.updated, div.error, .wrap .add-new-h2, textarea, input[type="text"], input[type="password"], input[type="file"], input[type="button"], input[type="submit"], input[type="reset"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="url"], select, .tablenav .tablenav-pages a, .tablenav-pages span.current, #titlediv #title, .postbox, #postcustomstuff table, #postcustomstuff input, #postcustomstuff textarea, .imgedit-menu div, .plugin-update-tr .update-message, #poststuff .inside .the-tagcloud, .login form, #login_error, .login .message, #menu-management .menu-edit, .nav-menus-php .list-container, .menu-item-handle, .link-to-original, .nav-menus-php .major-publishing-actions .form-invalid, .press-this #message, #TB_window, .tbtitle, .highlight, .feature-filter, #widget-list .widget-top, .editwidget .widget-inside {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+border-width: 1px;
+border-style: solid;
+}
+
+.login #nav{
+	margin: 10px 0 20px 0;
+	text-align: center;
+}
