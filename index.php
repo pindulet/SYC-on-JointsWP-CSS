@@ -84,21 +84,23 @@ element_hover();
 										sort_image('sort', $post_id, $available, $available_date);
 							endforeach; ?>
 										
-										</div>
+						</div>
 
-										
-										<!--
+							<!--
 										Paginering
 										-----------------------------------------------------------------
 										-->
-											
-											<?php
-												paginering($post_count, $page_num);
-											
+										<?php
+
+											$link =  get_site_url();
+													
+											paginering($post_count, $page_num, $link, "front");
+												
 
 										//End paginering
 										
-										?>
+										?>			
+										
 
 							<!--		
 					        <?php if (function_exists('joints_page_navi')) { ?>
@@ -131,6 +133,7 @@ element_hover();
 				    
 				    
 				</div> <!-- end #inner-content -->
+				
     
 			</div> <!-- end #content -->
 
