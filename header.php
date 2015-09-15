@@ -165,7 +165,7 @@
 					<div class="row">
 						<div class="small-10 small-centered columns" id="header-logo">
 							<a href="<?php bloginfo('url');?>">
-								<img src="<?php bloginfo('template_directory'); ?>/images/logo_new.png">
+								<img src="<?php bloginfo('template_directory'); ?>/images/logo_200x200_retina.png" width="100px" height="100px">
 							</a></a>
 						</div>
 					</div>
