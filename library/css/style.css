@@ -795,7 +795,7 @@ Home view - oversigt over shares
 */
 #main{
   display:none;
-  padding-bottom:40px;
+  padding-bottom:4em;
 
 } 
 
@@ -1021,6 +1021,10 @@ cursor: pointer;
    -moz-box-shadow: 2px 3px 7px -2px #111;
   -webkit-box-shadow: 2px 3px 7px -2px #111;
   box-shadow: 2px 3px 7px -2px #111;
+}
+
+#space{
+  height:5em;
 }
 
 /*
@@ -1413,6 +1417,12 @@ Usermenu
   text-align: center;
   
 }
+
+.active{
+  background-color:#44d27d !important;
+  color:#fff !important;
+}
+
 .usermenu-wrap{
   //padding:0 0.1em 0 0.1em;
 }

@@ -210,7 +210,7 @@
 														</a>
 													</li>
 													<li>
-														<a href="<?php echo $url; ?>/profile?userid=<?php echo $userID; ?>">
+														<a href="<?php echo $url; ?>/loans?userid=<?php echo $userID; ?>&filter=loans">
 															<img src="<?php bloginfo( 'template_directory' ) ?>/images/postsgrafik/user.png" /> <div class="show-for-medium-up">profil</div>
 														</a>
 													</li>
