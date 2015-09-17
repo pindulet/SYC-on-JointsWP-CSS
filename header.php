@@ -142,26 +142,29 @@
 			<div id="container">
 
 				<header class="header" role="banner">
-
-					<div id="inner-header" class="row">
-						<div class="small-12 columns">
-								<div id="usertext">
-
-										<?php
-										if (!is_user_logged_in()) {
-											$url=get_site_url();
-
-											echo "Hej gæst. <a class=\"login_link\" href=\"#\" onclick=\"return false;\">Log ind</a> eller <a href=\"$url/wp-login.php?action=register\">registrer dig som bruger</a>";
-										}
+					<?php
+						if (!is_user_logged_in()) {
+							
+							?>
+								<div id="inner-header" class="row">
+									<div class="small-12 medium-6 medium-offset-3 columns">
+											<div id="usertext">
+											<?php
+												$url=get_site_url();
+												echo "<h3>Har vi set hinanden før?</h3><br> <a class=\"button small login_link\" href=\"#\" onclick=\"return false;\">Log ind</a> eller <a class=\"button small\" href=\"$url/wp-login.php?action=register\">opret en gratis profil</a>";
 										
 										
+										
 
 
-										$url=get_site_url();
-										?>
-								</div> <!--- end usertext -->
-						</div>
-					</div>
+										
+											?>
+										</div> <!--- end usertext -->
+									</div>
+								</div>
+							<?php
+								}
+							?>
 					<div class="row">
 						<div class="small-10 small-centered columns" id="header-logo">
 							<a href="<?php bloginfo('url');?>">

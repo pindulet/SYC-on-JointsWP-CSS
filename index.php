@@ -1,4 +1,16 @@
-<?php get_header(); 
+<?php 
+
+//indhold begynder her
+//---------------------------------------------------------------
+$url = get_site_url();
+
+$redirect = $url . "/velkommen";
+if (!is_user_logged_in()) {
+	wp_redirect($redirect);
+	exit;
+	}
+
+get_header(); 
 
 /*
 Scripts
