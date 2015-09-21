@@ -384,18 +384,24 @@ FOUNDATION STYLES
 .clearing-assembled.clearing-blackout a:hover {
   background: none; }
 
-button.small, .button.small{
+button.small, .button.small, .button.large{
   background-color:#e4266f;
   color:#fff;
   padding:0.5em 1em 0.5em 1em;
+
+  border-radius: 3px;
+
+ 
+  box-shadow: 2px 2px 7px -2px #bbb;
 }
 
 .button:hover{
-  background-color: #e4266f;
+  background-color: #e4266f !important;
+  color:#fff !important;
+  text-decoration: none !important;
+  
 
-    -moz-box-shadow: 2px 2px 7px -2px #bbb;
-  -webkit-box-shadow: 2px 2px 7px -2px #bbb;
-  box-shadow: 2px 2px 7px -2px #bbb;
+  box-shadow: 2px 2px 7px -1px #666 !important;
 }
 
 a:link, a:visited, a:active{
@@ -1476,4 +1482,30 @@ Usermenu
 
 #heading{
   margin-left: 0.6em;
+}
+
+/*
+Landing page
+-----------------------------------------------------------------------*/
+
+.landing_text{
+  margin: 5em auto 5em auto;
+  padding:0 1em 0 1em;
+
+   border:solid 1px #ccc;
+
+
+  padding:8px;
+
+  text-align:center;
+  background-color:#ffffff;
+  box-shadow: 2px 2px 7px -2px #bbb;
+}
+
+.landing_background{
+  background: url("../../images/landing/background.jpg") no-repeat center center fixed;
+}
+
+.landing_register{
+  margin:auto 0 auto 0 ;
 }
