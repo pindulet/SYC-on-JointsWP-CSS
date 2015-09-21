@@ -131,7 +131,16 @@
 **************************************************************
 -->
 			<?php
-				$redirect_url = $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+				$host = $_SERVER["HTTP_HOST"];
+				$uri = $_SERVER["REQUEST_URI"];
+				//$url = get_site_url();
+				
+				$redirect_url = $host . $uri;
+				/*if ($uri == "/SYC-dev/velkommen/"){
+					$redirect_url = $url;
+					echo $redirect_url;
+				};*/
+
 
 				login_popup("Dejligt at se dig igen", "Log venligst ind nedenfor", ".login_link", $redirect_url);
 			?>

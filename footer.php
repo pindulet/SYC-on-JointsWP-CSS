@@ -21,7 +21,8 @@
 											
 											<div id="footer_menu_text">MENU</div>
 		    							<ul id="footer-menu_ul">
-											<li><a href="<?php $url=get_site_url(); ?>/velkommen-til-syc">Velkommen</a></li>
+		    								<?php $url=get_site_url(); ?>
+											<li><a href="<?php echo $url; ?>/velkommen-til-syc">Velkommen</a></li>
 											<li><a href="<?php echo $url; ?>/sadan-bruger-du-share-your-closet">Sådan bruger du SYC</a></li>
 											<li><a href="<?php echo $url; ?>/abc">SYC's ABC</a></li>
 											<li><a href="<?php echo $url; ?>/faq">FAQ</a></li>
